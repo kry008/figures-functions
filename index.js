@@ -229,6 +229,29 @@ class Trapeze {
     }
 }
 
+class Cuboid {
+    constructor(a, b, c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    area() {
+        return 2 * (this.a * this.b + this.a * this.c + this.b * this.c);
+    }
+    volume() {
+        return this.a * this.b * this.c;
+    }
+    diagonal() {
+        return Math.sqrt(this.a * this.a + this.b * this.b + this.c * this.c);
+    }
+    DiagonalAtTheBase() {
+        return Math.sqrt(this.a * this.a + this.b * this.b);
+    }
+    info() {
+        console.log("constructor(a, b, c), 1 - First side of figure (at the base), 2 - Second side of figure (at the base), 3 - Height of figure");
+    }
+}
+
 module.exports = {
     Rectangle, 
     Square, 
@@ -238,5 +261,6 @@ module.exports = {
     TriangleEquilateral, 
     TriangleRectangular, 
     CircleSegment,
-    Trapeze
+    Trapeze,
+    Cuboid
 };

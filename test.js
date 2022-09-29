@@ -7,4 +7,7 @@ console.log(figures.Triangle);
 console.log(figures.Diamond);
 console.log(figures.TriangleEquilateral);
 console.log(figures.TriangleRectangular);
+console.log(figures.CircleSegment);
+console.log(figures.Trapeze);
+console.log(figures.Cuboid);
 
