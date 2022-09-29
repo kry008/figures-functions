@@ -178,5 +178,65 @@ class Diamond {
         console.log("constructor(a, b), 1 - First diagonal of figure, 2 - Second diagonal of figure");
     }
 }
+class CircleSegment {
+    constructor(radius, angle) {
+        this.radius = radius;
+        this.angle = angle;
+    }
+    area() {
+        return this.radius * this.radius * this.angle / 2;
+    }
+    circuit() {
+        return this.radius * this.angle;
+    }
+    circleOutlinedInACircleSegment() {
+        return new Circle(2 * this.area() / this.circuit());
+    }
+    circleInscribedInACircleSegment() {
+        return new Circle(this.area() / (this.circuit() / 2));
+    }
+    info() {
+        console.log("constructor(radius, angle), 1 - Radius of figure, 2 - Angle of figure in radians");
+    }
+}
+class Trapeze {
+    constructor(a, b, c, d) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+    }
+    area() {
+        return (this.a + this.b) * this.height() / 2;
+    }
+    circuit() {
+        return this.a + this.b + this.c + this.d;
+    }
+    circleOutlinedInATrapeze() {
+        return new Circle(2 * this.area() / this.circuit());
+    }
+    circleInscribedInATrapeze() {
+        return new Circle(this.area() / (this.circuit() / 2));
+    }
+    height() {
+        return Math.sqrt(this.a * this.a - (this.a - this.b) * (this.a - this.b) / 4);
+    }
+    diagonals() {
+        return [Math.sqrt(this.a * this.a + this.c * this.c), Math.sqrt(this.b * this.b + this.d * this.d)];
+    }
+    info() {
+        console.log("constructor(a, b, c, d), 1 - First side of figure, 2 - Second side of figure, 3 - Third side of figure, 4 - Fourth side of figure");
+    }
+}
 
-module.exports = {Rectangle, Square, Circle, Triangle, Diamond, TriangleEquilateral, TriangleRectangular};
+module.exports = {
+    Rectangle, 
+    Square, 
+    Circle, 
+    Triangle, 
+    Diamond, 
+    TriangleEquilateral, 
+    TriangleRectangular, 
+    CircleSegment,
+    Trapeze
+};
