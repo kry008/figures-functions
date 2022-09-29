@@ -1,13 +1,13 @@
 {
   "name": "figures-functions",
-  "version": "1.0.2",
-  "description": "All the necessary classes for calculating figures",
+  "version": "1.0.3",
+  "description": "All the necessary classes for calculating figures 2d and 3d",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "keywords": [
-    "figures"
+    "figures", "2d", "3d", "functions"
   ],
   "author": "kry008",
   "license": "MIT"

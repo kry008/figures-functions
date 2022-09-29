@@ -252,6 +252,42 @@ class Cuboid {
     }
 }
 
+class Cylinder {
+    constructor(radius, height) {
+        this.radius = radius;
+        this.height = height;
+    }
+    area() {
+        return 2 * Math.PI * this.radius * (this.radius + this.height);
+    }
+    volume() {
+        return Math.PI * this.radius * this.radius * this.height;
+    }
+    info() {
+        console.log("constructor(radius, height), 1 - Radius of figure, 2 - Height of figure");
+    }
+}
+class Cube {
+    constructor(a) {
+        this.a = a;
+    }
+    area() {
+        return 6 * this.a * this.a;
+    }
+    volume() {
+        return this.a * this.a * this.a;
+    }
+    diagonal() {
+        return Math.sqrt(3) * this.a;
+    }
+    diagonalAtTheBase() {
+        return Math.sqrt(2) * this.a;
+    }
+    info() {
+        console.log("constructor(a), 1 - Side of figure");
+    }
+}
+
 module.exports = {
     Rectangle, 
     Square, 
@@ -262,5 +298,7 @@ module.exports = {
     TriangleRectangular, 
     CircleSegment,
     Trapeze,
-    Cuboid
+    Cuboid,
+    Cylinder,
+    Cube
 };

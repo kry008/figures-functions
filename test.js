@@ -10,4 +10,5 @@ console.log(figures.TriangleRectangular);
 console.log(figures.CircleSegment);
 console.log(figures.Trapeze);
 console.log(figures.Cuboid);
-
+console.log(figures.Cylinder);
+console.log(figures.Cube);
