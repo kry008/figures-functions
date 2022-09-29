@@ -1,0 +1,14 @@
+{
+  "name": "figures-functions",
+  "version": "1.0.0",
+  "description": "All the necessary classes for calculating figures",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "figures"
+  ],
+  "author": "kry008",
+  "license": "MIT"
+}
