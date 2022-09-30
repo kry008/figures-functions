@@ -18,4 +18,4 @@ import { name_of_classes } from "functions-date";
 ```
 
 ## Demo
-**TO DO**
+https://runkit.com/kry008/figures-functions
