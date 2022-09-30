@@ -14,7 +14,7 @@ var ff = require("functions-date")
 ```
 or
 ```js
-import { name_of_fuctions } from "functions-date";
+import { name_of_classes } from "functions-date";
 ```
 
 ## Demo
