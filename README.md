@@ -6,15 +6,15 @@
 
 ## Installation
 ```console
-npm i functions-date
+npm i figures-functions
 ```
 ## Importing package
 ```js
-var ff = require("functions-date")
+var ff = require("figures-functions")
 ```
 or
 ```js
-import { name_of_classes } from "functions-date";
+import { name_of_classes } from "figures-functions";
 ```
 
 ## Demo
